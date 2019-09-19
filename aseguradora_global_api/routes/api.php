@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('/cat_paises', 'PaisesCtrl')->middleware('cors');
+Route::resource('/cat_estados', 'EstadosCtrl')->middleware('cors');
+Route::resource('/cat_municipios', 'MunicipiosCtrl')->middleware('cors');

@@ -161,9 +161,11 @@ class ComposerStaticInita6044cd610fc5b15ce441dc7364af17b
         'B' => 
         array (
             'BeyondCode\\DumpServer\\' => 22,
+            'Barryvdh\\Cors\\' => 14,
         ),
         'A' => 
         array (
+            'Asm89\\Stack\\' => 12,
             'App\\' => 4,
         ),
     );
@@ -425,6 +427,14 @@ class ComposerStaticInita6044cd610fc5b15ce441dc7364af17b
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
         ),
+        'Barryvdh\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-cors/src',
+        ),
+        'Asm89\\Stack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -467,7 +477,14 @@ class ComposerStaticInita6044cd610fc5b15ce441dc7364af17b
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\Catalogos\\EstatusPolizasCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php',
+        'App\\Http\\Controllers\\Catalogos\\SexosCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/SexosCtrl.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\EspecialidadesMedicasCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php',
+        'App\\Http\\Controllers\\EstadosCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/EstadosCtrl.php',
+        'App\\Http\\Controllers\\MunicipiosCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/MunicipiosCtrl.php',
+        'App\\Http\\Controllers\\PaisesCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/PaisesCtrl.php',
+        'App\\Http\\Controllers\\SegmentosMercadoCtrl' => __DIR__ . '/../..' . '/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -476,12 +493,25 @@ class ComposerStaticInita6044cd610fc5b15ce441dc7364af17b
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Catalogos\\EspecialidadesMedicas' => __DIR__ . '/../..' . '/app/Models/Catalogos/EspecialidadesMedicas.php',
+        'App\\Models\\Catalogos\\Estados' => __DIR__ . '/../..' . '/app/Models/Catalogos/Estados.php',
+        'App\\Models\\Catalogos\\EstatusPolizas' => __DIR__ . '/../..' . '/app/Models/Catalogos/EstatusPolizas.php',
+        'App\\Models\\Catalogos\\Municipios' => __DIR__ . '/../..' . '/app/Models/Catalogos/Municipios.php',
+        'App\\Models\\Catalogos\\Paises' => __DIR__ . '/../..' . '/app/Models/Catalogos/Paises.php',
+        'App\\Models\\Catalogos\\SegmentosMercado' => __DIR__ . '/../..' . '/app/Models/Catalogos/SegmentosMercado.php',
+        'App\\Models\\Catalogos\\Sexos' => __DIR__ . '/../..' . '/app/Models/Catalogos/Sexos.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
+        'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
+        'Barryvdh\\Cors\\HandleCors' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandleCors.php',
+        'Barryvdh\\Cors\\HandlePreflight' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandlePreflight.php',
+        'Barryvdh\\Cors\\LumenServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/LumenServiceProvider.php',
+        'Barryvdh\\Cors\\ServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/ServiceProvider.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
