@@ -1,0 +1,27 @@
+SELECT *FROM cat_especialidades_medicas;
+SELECT *FROM doctores;
+SELECT *FROM doctor_especialidades_medicas;
+
+INSERT INTO doctor_especialidades_medicas VALUES (1, 4, 1);
+
+SELECT doctores.id_doctor,doctores.nombre, cat_especialidades_medicas.especialidad_medica
+FROM doctores
+JOIN doctor_especialidades_medicas ON doctor_especialidades_medicas.id_doctor = doctores.id_doctor
+JOIN cat_especialidades_medicas ON doctor_especialidades_medicas.id_cat_especialidad_medica = cat_especialidades_medicas.id_cat_especialidad_medica
+WHERE doctores.id_doctor = 1;
+
+SELECT doctores.id_doctor,doctores.nombre,
+       cat_especialidades_medicas.especialidad_medica,
+       empresas_aseguradoras.empresa_aseguradora
+FROM doctores
+JOIN doctor_especialidades_medicas ON doctor_especialidades_medicas.id_doctor = doctores.id_doctor
+JOIN cat_especialidades_medicas ON doctor_especialidades_medicas.id_cat_especialidad_medica = cat_especialidades_medicas.id_cat_especialidad_medica
+JOIN empresas_aseguradoras ON doctor_especialidades_medicas.id_empresa_aseguradora = empresas_aseguradoras.id_empresa_aseguradora
+WHERE doctores.id_doctor = 1;
+
+
+SELECT *FROM doctores where es_cliente = 1;
+
+
+
+
