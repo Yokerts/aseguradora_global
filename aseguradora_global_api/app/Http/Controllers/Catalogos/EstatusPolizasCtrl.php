@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Catalogos;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Models\Catalogos\EstatusPolizas;
+
 
 class EstatusPolizasCtrl extends Controller
 {
@@ -14,7 +16,8 @@ class EstatusPolizasCtrl extends Controller
      */
     public function index()
     {
-        //
+        $estatus_polizas = EstatusPolizas::all();
+        return response()->json(['estatus_polizas' => $estatus_polizas, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**

@@ -20,3 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('/cat_paises', 'PaisesCtrl')->middleware('cors');
 Route::resource('/cat_estados', 'EstadosCtrl')->middleware('cors');
 Route::resource('/cat_municipios', 'MunicipiosCtrl')->middleware('cors');
+Route::resource('/cat_estatus_polizas', 'EstatusPolizasCtrl')->middleware('cors');
+Route::resource('/cat_especialidades_medicas', 'EspecialidadesMedicasCtrl')->middleware('cors');
+Route::resource('/cat_segmentos_mercado', 'SegmentosMercadoCtrl')->middleware('cors');
+Route::resource('/cat_sexos', 'SexosCtrl')->middleware('cors');

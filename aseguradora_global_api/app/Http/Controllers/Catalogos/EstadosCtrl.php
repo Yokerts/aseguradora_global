@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Models\Catalogos\Cat_Estados;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
+use App\Http\Controllers\Controller;
+use App\Http\Models\Catalogos\Estados;
 
 class EstadosCtrl extends Controller
 {
@@ -15,7 +15,7 @@ class EstadosCtrl extends Controller
      */
     public function index()
     {
-        $estados = Cat_Estados::all();
+        $estados = Estados::all();
         return response()->json(['estados' => $estados, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Models\Catalogos\SegmentosMercado;
 
 class SegmentosMercadoCtrl extends Controller
 {
@@ -13,7 +15,8 @@ class SegmentosMercadoCtrl extends Controller
      */
     public function index()
     {
-        //
+        $segmentos_mercado = SegmentosMercado::all();
+        return response()->json(['segmentos_mercado' => $segmentos_mercado, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**

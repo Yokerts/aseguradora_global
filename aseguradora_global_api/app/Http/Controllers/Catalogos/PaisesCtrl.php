@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Models\Catalogos\Cat_Paises;
+use App\Http\Controllers\Controller;
+use App\Http\Models\Catalogos\Paises;
 
 class PaisesCtrl extends Controller
 {
@@ -14,7 +15,7 @@ class PaisesCtrl extends Controller
      */
     public function index()
     {
-        $paises = Cat_Paises::all();
+        $paises = Paises::all();
         return response()->json(['paises' => $paises, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 

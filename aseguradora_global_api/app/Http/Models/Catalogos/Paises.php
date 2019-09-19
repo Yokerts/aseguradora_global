@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Models\Catalogos;
+namespace App\Http\Models\Catalogos;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cat_Paises extends Model
+class Paises extends Model
 {
-    protected $fillable = [
+    protected $table = "cat_paises";
+    /*protected $fillable = [
         'id_cat_pais',
         'pais'
-    ];
+    ];*/
 }

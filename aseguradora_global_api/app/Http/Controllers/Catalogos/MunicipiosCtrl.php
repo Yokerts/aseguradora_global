@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Models\Catalogos\Municipios;
+
 
 class MunicipiosCtrl extends Controller
 {
@@ -13,7 +16,8 @@ class MunicipiosCtrl extends Controller
      */
     public function index()
     {
-        //
+        $municipios = Municipios::all();
+        return response()->json(['municipios' => $municipios, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**

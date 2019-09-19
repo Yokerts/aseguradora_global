@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Models\Catalogos\EspecialidadesMedicas;
+
 
 class EspecialidadesMedicasCtrl extends Controller
 {
@@ -13,7 +16,8 @@ class EspecialidadesMedicasCtrl extends Controller
      */
     public function index()
     {
-        //
+        $especialidades_medicas = EspecialidadesMedicas::all();
+        return response()->json(['especialidades_medicas' => $especialidades_medicas, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**
