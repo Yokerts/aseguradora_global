@@ -5,19 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/EspecialidadesMedicas.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/EspecialidadesMedicas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/Estados.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/Estados.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/Municipios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/Municipios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/Paises.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/Paises.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/SegmentosMercado.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/SegmentosMercado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,20 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="102">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -51,10 +36,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
               <folding>
-                <element signature="e#50#78#0#PHP" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +48,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+              <folding>
+                <element signature="e#50#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -75,26 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="289">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -102,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            <state relative-caret-position="243">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -135,19 +159,19 @@
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/Cat_Paises.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/Paises.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/Estados.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/Municipios.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/SegmentosMercado.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/EspecialidadesMedicas.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
       </list>
     </option>
   </component>
@@ -316,6 +340,12 @@
             <path>
               <item name="aseguradora_global_api" type="b2602c69:ProjectViewProjectNode" />
               <item name="aseguradora_global_api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aseguradora_global_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aseguradora_global_api" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -331,9 +361,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\seguros_globales\aseguradora_global_api\app\Http\Controllers\Catalogos" />
       <recent name="C:\xampp\htdocs\seguros_globales\aseguradora_global_api\app\Http\Models\Catalogos" />
       <recent name="C:\xampp\htdocs\seguros_globales\aseguradora_global_api\app\Http\Models" />
-      <recent name="C:\xampp\htdocs\seguros_globales\aseguradora_global_api\app\Http\Controllers\Catalogos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,12 +394,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568911714844</updated>
-      <workItem from="1568911718336" duration="8032000" />
+      <workItem from="1568911718336" duration="10067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8032000" />
+    <option name="totallyTimeSpent" value="10067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -379,7 +409,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -408,13 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="62" column="51" lean-forward="true" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -426,33 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -487,54 +483,6 @@
     <entry file="file://$PROJECT_DIR$/routes/channels.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/EspecialidadesMedicas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -542,20 +490,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="51" lean-forward="true" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#40#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstadosCtrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/MunicipiosCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/PaisesCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EstatusPolizasCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="e#50#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/SexosCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/SegmentosMercadoCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
         </state>
       </provider>
     </entry>

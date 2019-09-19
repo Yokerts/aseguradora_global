@@ -17,10 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('/cat_paises', 'PaisesCtrl')->middleware('cors');
-Route::resource('/cat_estados', 'EstadosCtrl')->middleware('cors');
-Route::resource('/cat_municipios', 'MunicipiosCtrl')->middleware('cors');
-Route::resource('/cat_estatus_polizas', 'EstatusPolizasCtrl')->middleware('cors');
-Route::resource('/cat_especialidades_medicas', 'EspecialidadesMedicasCtrl')->middleware('cors');
-Route::resource('/cat_segmentos_mercado', 'SegmentosMercadoCtrl')->middleware('cors');
-Route::resource('/cat_sexos', 'SexosCtrl')->middleware('cors');
+Route::resource('/cat_paises', 'Catalogos\PaisesCtrl')->middleware('cors');
+Route::resource('/cat_estados', 'Catalogos\EstadosCtrl')->middleware('cors');
+Route::resource('/cat_municipios', 'Catalogos\MunicipiosCtrl')->middleware('cors');
+Route::resource('/cat_estatus_polizas', 'Catalogos\EstatusPolizasCtrl')->middleware('cors');
+Route::resource('/cat_especialidades_medicas', 'Catalogos\EspecialidadesMedicasCtrl')->middleware('cors');
+Route::resource('/cat_segmentos_mercado', 'Catalogos\SegmentosMercadoCtrl')->middleware('cors');
+Route::resource('/cat_sexos', 'Catalogos\SexosCtrl')->middleware('cors');
