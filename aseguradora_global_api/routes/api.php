@@ -24,3 +24,5 @@ Route::resource('/cat_estatus_polizas', 'Catalogos\EstatusPolizasCtrl')->middlew
 Route::resource('/cat_especialidades_medicas', 'Catalogos\EspecialidadesMedicasCtrl')->middleware('cors');
 Route::resource('/cat_segmentos_mercado', 'Catalogos\SegmentosMercadoCtrl')->middleware('cors');
 Route::resource('/cat_sexos', 'Catalogos\SexosCtrl')->middleware('cors');
+
+Route::resource('/empresas_aseguradoras', 'Sistema\EmpresasAseguradorasCtrl')->middleware('cors');
