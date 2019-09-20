@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-09-2019 a las 04:11:27
+-- Tiempo de generación: 20-09-2019 a las 05:52:16
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -476,6 +476,8 @@ CREATE TABLE `cat_vigencias` (
 
 INSERT INTO `cat_vigencias` (`id_cat_vigencias`, `vigencia`) VALUES
 (0, '1 año'),
+(1, '2 años'),
+(0, '1 año'),
 (1, '2 años');
 
 -- --------------------------------------------------------
@@ -556,6 +558,7 @@ INSERT INTO `doctores` (`id_doctor`, `nombre`, `apellido_paterno`, `apellido_mat
 --
 
 CREATE TABLE `doctor_especialidades_medicas` (
+  `id_doctor_especialidad_medica` int(11) DEFAULT NULL,
   `id_doctor` int(11) NOT NULL,
   `id_cat_especialidad_medica` int(11) NOT NULL,
   `id_empresa_aseguradora` int(11) NOT NULL
@@ -565,13 +568,19 @@ CREATE TABLE `doctor_especialidades_medicas` (
 -- Volcado de datos para la tabla `doctor_especialidades_medicas`
 --
 
-INSERT INTO `doctor_especialidades_medicas` (`id_doctor`, `id_cat_especialidad_medica`, `id_empresa_aseguradora`) VALUES
-(0, 3, 0),
-(2, 4, 0),
-(0, 1, 0),
-(1, 3, 2),
-(1, 1, 1),
-(1, 4, 1);
+INSERT INTO `doctor_especialidades_medicas` (`id_doctor_especialidad_medica`, `id_doctor`, `id_cat_especialidad_medica`, `id_empresa_aseguradora`) VALUES
+(NULL, 0, 3, 0),
+(NULL, 2, 4, 0),
+(NULL, 0, 1, 0),
+(NULL, 1, 3, 2),
+(NULL, 1, 1, 1),
+(NULL, 1, 4, 1),
+(NULL, 0, 3, 0),
+(NULL, 2, 4, 0),
+(NULL, 0, 1, 0),
+(NULL, 1, 3, 2),
+(NULL, 1, 1, 1),
+(NULL, 1, 4, 1);
 
 -- --------------------------------------------------------
 
@@ -632,12 +641,44 @@ CREATE TABLE `polizas` (
   `fecha_fin` datetime DEFAULT NULL,
   `id_cat_vigencia` int(11) DEFAULT NULL,
   `clientes_asegurados_id_cliente_asegurado` int(11) NOT NULL,
-  `empresas_aseguradoras_id_empresa_aseguradora` int(11) NOT NULL,
   `cat_estatus_polizas_id_cat_estatus_poliza` int(11) NOT NULL,
+  `empresas_aseguradoras_id_empresa_aseguradora` int(11) NOT NULL,
   `cat_paises_id_cat_pais` int(11) NOT NULL,
   `cat_municipios_id_cat_municipio` int(11) NOT NULL,
   `cat_estados_id_cat_estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `polizas`
+--
+
+INSERT INTO `polizas` (`id_poliza`, `fecha_alta`, `fecha_inicio`, `fecha_fin`, `id_cat_vigencia`, `clientes_asegurados_id_cliente_asegurado`, `cat_estatus_polizas_id_cat_estatus_poliza`, `empresas_aseguradoras_id_empresa_aseguradora`, `cat_paises_id_cat_pais`, `cat_municipios_id_cat_municipio`, `cat_estados_id_cat_estado`) VALUES
+(0, '2019-09-19 10:34:09', '2019-09-19 10:34:09', '2020-09-19 10:34:09', 0, 0, 0, 0, 0, 179, 6),
+(1, '2017-09-19 10:34:09', '2017-09-19 10:34:09', '2018-09-19 10:34:09', 0, 1, 0, 0, 0, 179, 6),
+(2, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 1, 0, 0, 0, 179, 6),
+(3, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 1, 0, 0, 0, 179, 6),
+(4, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(5, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(6, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(7, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(8, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(9, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(10, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(11, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(12, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(13, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(14, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(15, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(16, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(17, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(18, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(19, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(20, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
+(21, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
+(22, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
+(23, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
+(24, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 4, 0, 0, 0, 179, 6),
+(25, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 4, 0, 0, 0, 179, 6);
 
 -- --------------------------------------------------------
 
@@ -744,8 +785,8 @@ ALTER TABLE `migrations`
 ALTER TABLE `polizas`
   ADD PRIMARY KEY (`id_poliza`),
   ADD KEY `fk_polizas_clientes_asegurados1_idx` (`clientes_asegurados_id_cliente_asegurado`),
-  ADD KEY `fk_polizas_empresas_aseguradoras1_idx` (`empresas_aseguradoras_id_empresa_aseguradora`),
   ADD KEY `fk_polizas_cat_estatus_polizas1_idx` (`cat_estatus_polizas_id_cat_estatus_poliza`),
+  ADD KEY `fk_polizas_empresas_aseguradoras1_idx` (`empresas_aseguradoras_id_empresa_aseguradora`),
   ADD KEY `fk_polizas_cat_paises1_idx` (`cat_paises_id_cat_pais`),
   ADD KEY `fk_polizas_cat_municipios1_idx` (`cat_municipios_id_cat_municipio`),
   ADD KEY `fk_polizas_cat_estados1_idx` (`cat_estados_id_cat_estado`);
@@ -755,53 +796,6 @@ ALTER TABLE `polizas`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `migrations`
---
-ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `clientes_asegurados`
---
-ALTER TABLE `clientes_asegurados`
-  ADD CONSTRAINT `fk_clientes_asegurados_cat_estados1` FOREIGN KEY (`cat_estados_id_cat_estado`) REFERENCES `cat_estados` (`id_cat_estado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_clientes_asegurados_cat_municipios1` FOREIGN KEY (`cat_municipios_id_cat_municipio`) REFERENCES `cat_municipios` (`id_cat_municipio`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_clientes_asegurados_cat_paises1` FOREIGN KEY (`cat_paises_id_cat_pais`) REFERENCES `cat_paises` (`id_cat_pais`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_clientes_asegurados_cat_segmentos_mercado1` FOREIGN KEY (`cat_segmentos_mercado_id_cat_segmento_mercado`) REFERENCES `cat_segmentos_mercado` (`id_cat_segmento_mercado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_clientes_asegurados_cat_sexos1` FOREIGN KEY (`cat_sexos_id_cat_sexo`) REFERENCES `cat_sexos` (`id_cat_sexo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `eventos`
---
-ALTER TABLE `eventos`
-  ADD CONSTRAINT `fk_eventos_polizas1` FOREIGN KEY (`polizas_id_poliza`) REFERENCES `polizas` (`id_poliza`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `polizas`
---
-ALTER TABLE `polizas`
-  ADD CONSTRAINT `fk_polizas_cat_estados1` FOREIGN KEY (`cat_estados_id_cat_estado`) REFERENCES `cat_estados` (`id_cat_estado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_polizas_cat_estatus_polizas1` FOREIGN KEY (`cat_estatus_polizas_id_cat_estatus_poliza`) REFERENCES `cat_estatus_polizas` (`id_cat_estatus_poliza`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_polizas_cat_municipios1` FOREIGN KEY (`cat_municipios_id_cat_municipio`) REFERENCES `cat_municipios` (`id_cat_municipio`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_polizas_cat_paises1` FOREIGN KEY (`cat_paises_id_cat_pais`) REFERENCES `cat_paises` (`id_cat_pais`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_polizas_clientes_asegurados1` FOREIGN KEY (`clientes_asegurados_id_cliente_asegurado`) REFERENCES `clientes_asegurados` (`id_cliente_asegurado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_polizas_empresas_aseguradoras1` FOREIGN KEY (`empresas_aseguradoras_id_empresa_aseguradora`) REFERENCES `empresas_aseguradoras` (`id_empresa_aseguradora`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
