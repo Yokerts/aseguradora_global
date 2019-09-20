@@ -40,26 +40,25 @@ INSERT INTO clientes_asegurados VALUES (
 # fecha_fin
 # vigencia
 # clientes_asegurados_id_cliente_asegurado
-# empresas_aseguradoras_id_empresa_aseguradora
 # cat_estatus_polizas_id_cat_estatus_poliza
 # cat_paises_id_cat_pais
 # cat_municipios_id_cat_municipio
 # cat_estados_id_cat_estado
 
 INSERT INTO polizas VALUES (
-        '0',
-        'Thu Sep 19 2019 19:41:33 GMT-0500 (hora de verano central)',
-        'Thu Sep 19 2019 19:41:33 GMT-0500 (hora de verano central)',
-        'Thu Sep 19 2019 19:41:33 GMT-0500 (hora de verano central)',
-        'vigencia',
-        'clientes_asegurados_id_cliente_asegurado',
-        'empresas_aseguradoras_id_empresa_aseguradora',
-        'cat_estatus_polizas_id_cat_estatus_poliza',
-        'cat_paises_id_cat_pais',
-        'cat_municipios_id_cat_municipio',
-        'cat_estados_id_cat_estado'
+        25,
+        CAST(N'2016-06-19 10:34:09.000' AS DateTime),
+        CAST(N'2016-06-19 10:34:09.000' AS DateTime),
+        CAST(N'2017-06-19 10:34:09.000' AS DateTime),
+        0,
+        4,
+        0,
+        0,
+        179,
+        6
         );
 
+UPDATE polizas SET fecha_fin = CAST(N'2020-09-19 10:34:09.000' AS DateTime) WHERE id_poliza = 0;
 
 SELECT doctores.id_doctor,doctores.nombre, cat_especialidades_medicas.especialidad_medica
 FROM doctores
