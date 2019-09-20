@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-09-2019 a las 02:35:45
+-- Tiempo de generación: 20-09-2019 a las 04:11:27
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -462,6 +462,25 @@ INSERT INTO `cat_sexos` (`id_cat_sexo`, `sexo`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `cat_vigencias`
+--
+
+CREATE TABLE `cat_vigencias` (
+  `id_cat_vigencias` int(11) NOT NULL,
+  `vigencia` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `cat_vigencias`
+--
+
+INSERT INTO `cat_vigencias` (`id_cat_vigencias`, `vigencia`) VALUES
+(0, '1 año'),
+(1, '2 años');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `clientes_asegurados`
 --
 
@@ -611,7 +630,7 @@ CREATE TABLE `polizas` (
   `fecha_alta` datetime DEFAULT NULL,
   `fecha_inicio` datetime DEFAULT NULL,
   `fecha_fin` datetime DEFAULT NULL,
-  `vigencia` varchar(45) DEFAULT NULL,
+  `id_cat_vigencia` int(11) DEFAULT NULL,
   `clientes_asegurados_id_cliente_asegurado` int(11) NOT NULL,
   `empresas_aseguradoras_id_empresa_aseguradora` int(11) NOT NULL,
   `cat_estatus_polizas_id_cat_estatus_poliza` int(11) NOT NULL,
