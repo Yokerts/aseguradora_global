@@ -37,7 +37,39 @@ class EventosCtrl extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datos = Input::json()->all();
+
+        $success = false;
+        DB::beginTransaction();
+
+        try {
+            $tabla = new Eventos;
+
+            $datos = (object) $datos;
+            $poliza = Polizas::where('id', $datos->id_poliza)->first();
+
+            //si no jaja pasar a objetos
+            //$poliza = (object) $poliza;
+            if($poliza->cat_estatus_polizas_id_cat_estatus_poliza == 1){
+                // Va el insert de poliza
+            }else{
+                // No inert
+            }
+
+            $success = true;
+
+        } catch (\Exception $e){
+            return Response::json($e->getMessage(), 500);
+        }
+
+        if ($success){
+            DB::commit();
+
+            return Response::json(array("status" => 201,"messages" => "Creado", "data" => $tabla), 201);
+        } else{
+            DB::rollback();
+            return Response::json(array("status" => 409,"messages" => "Conflicto"), 409);
+        }
     }
 
     /**

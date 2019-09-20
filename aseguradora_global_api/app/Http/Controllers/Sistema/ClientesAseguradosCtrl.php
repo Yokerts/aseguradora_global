@@ -7,7 +7,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Models\Sistema\ClientesAsegurados;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\DB;
-use PhpParser\Comment\Doc;
 
 class ClientesAseguradosCtrl extends Controller
 {

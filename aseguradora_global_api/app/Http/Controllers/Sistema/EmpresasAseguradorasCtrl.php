@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Sistema;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Models\Sistema\EmpresasAseguradoras;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
+
 
 class EmpresasAseguradorasCtrl extends Controller
 {
@@ -37,7 +40,17 @@ class EmpresasAseguradorasCtrl extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request = Input::json()->all();
+        $request = (Object) $request;
+
+        //dd($request);
+
+        $empresa = new EmpresasAseguradoras([
+            'empresa_aseguradora' => $request->empresa_aseguradora
+        ]);
+
+        $empresa->save();
+        return response()->json(['data' => $empresa, 'success' => true, 'mensaje' => "Guardado Correctamente"], 201);
     }
 
     /**
@@ -48,7 +61,13 @@ class EmpresasAseguradorasCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $empresa = EmpresasAseguradoras::where("id_empresa_aseguradora","=",$id)->get();
+        $count = $empresa->count();
+        if ($count > 0) {
+            return response()->json(['data' => $empresa[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 200);
+        }
     }
 
     /**
