@@ -71,7 +71,13 @@ class ClientesAseguradosCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $cliente = ClientesAsegurados::where("id_cliente_asegurado","=",$id)->get();
+        $count = $cliente->count();
+        if ($count > 0) {
+            return response()->json(['data' => $cliente[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 200);
+        }
     }
 
     /**
