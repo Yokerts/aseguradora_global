@@ -26,3 +26,7 @@ Route::resource('/cat_segmentos_mercado', 'Catalogos\SegmentosMercadoCtrl')->mid
 Route::resource('/cat_sexos', 'Catalogos\SexosCtrl')->middleware('cors');
 
 Route::resource('/empresas_aseguradoras', 'Sistema\EmpresasAseguradorasCtrl')->middleware('cors');
+Route::resource('/clientes_asegurados', 'Sistema\ClientesAseguradosCtrl')->middleware('cors');
+Route::resource('/doctores', 'Sistema\DoctoresCtrl')->middleware('cors');
+Route::resource('/polizas', 'Sistema\PolizasCtrl')->middleware('cors');
+Route::resource('/eventos', 'Sistema\EventosCtrl')->middleware('cors');

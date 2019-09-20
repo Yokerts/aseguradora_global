@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Sistema;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Models\Sistema\Doctores;
+
 
 class DoctoresCtrl extends Controller
 {
@@ -14,7 +16,8 @@ class DoctoresCtrl extends Controller
      */
     public function index()
     {
-        //
+        $doctores = Doctores::all();
+        return response()->json(['doctores' => $doctores, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**

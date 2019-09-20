@@ -4,22 +4,8 @@ SELECT *FROM doctor_especialidades_medicas;
 
 INSERT INTO doctor_especialidades_medicas VALUES (1, 4, 1);
 
-# nombre,
-# apellido_paterno,
-# apellido_materno,
-# fecha_nacimiento,
-# codigo_postal,
-# edad,
-# direccion,
-# rfc,
-# cat_segmentos_mercado_id_cat_segmento_mercado,
-# cat_sexos_id_cat_sexo,
-# cat_paises_id_cat_pais,
-# cat_municipios_id_cat_municipio,
-# cat_estados_id_cat_estado
-
 INSERT INTO clientes_asegurados VALUES (
-        18,
+        0,
         'Héctor',
         'Murillo',
         'Aguilar',
@@ -33,20 +19,8 @@ INSERT INTO clientes_asegurados VALUES (
         179,
         6);
 
-
-# id_poliza
-# fecha_alta
-# fecha_inicio
-# fecha_fin
-# vigencia
-# clientes_asegurados_id_cliente_asegurado
-# cat_estatus_polizas_id_cat_estatus_poliza
-# cat_paises_id_cat_pais
-# cat_municipios_id_cat_municipio
-# cat_estados_id_cat_estado
-
 INSERT INTO polizas VALUES (
-        25,
+        0,
         CAST(N'2016-06-19 10:34:09.000' AS DateTime),
         CAST(N'2016-06-19 10:34:09.000' AS DateTime),
         CAST(N'2017-06-19 10:34:09.000' AS DateTime),

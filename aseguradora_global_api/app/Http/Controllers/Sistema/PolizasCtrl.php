@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Sistema;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Models\Sistema\Polizas;
 
 class PolizasCtrl extends Controller
 {
@@ -14,7 +15,8 @@ class PolizasCtrl extends Controller
      */
     public function index()
     {
-        //
+        $polizas = Polizas::all();
+        return response()->json(['polizas' => $polizas, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**

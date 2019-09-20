@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Sistema;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Models\Sistema\Eventos;
 
 class EventosCtrl extends Controller
 {
@@ -14,7 +15,8 @@ class EventosCtrl extends Controller
      */
     public function index()
     {
-        //
+        $eventos = Eventos::all();
+        return response()->json(['eventos' => $eventos, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Sistema;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Models\Sistema\ClientesAsegurados;
 
 class ClientesAseguradosCtrl extends Controller
 {
@@ -14,7 +15,8 @@ class ClientesAseguradosCtrl extends Controller
      */
     public function index()
     {
-        //
+        $clientes_asegurados = ClientesAsegurados::all();
+        return response()->json(['clientes_asegurados' => $clientes_asegurados, 'success' => true, 'mensaje' => "Datos encontrados."], 200);
     }
 
     /**
