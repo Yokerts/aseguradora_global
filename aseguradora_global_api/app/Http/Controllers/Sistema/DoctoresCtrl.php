@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Sistema;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Models\Sistema\Doctores;
-
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
+use PhpParser\Comment\Doc;
 
 class DoctoresCtrl extends Controller
 {
@@ -38,7 +40,20 @@ class DoctoresCtrl extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request = Input::json()->all();
+        $request = (Object) $request;
+
+        //dd($request);
+
+        $doctor = new Doctores([
+            'nombre' => $request->nombre,
+            'apellido_paterno' => $request->apellido_paterno,
+            'apellido_materno' => $request->apellido_materno,
+            'es_cliente' => $request->es_cliente
+        ]);
+
+        $doctor->save();
+        return response()->json(['data' => $doctor, 'success' => true, 'mensaje' => "Guardado Correctamente"], 201);
     }
 
     /**
@@ -49,7 +64,14 @@ class DoctoresCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        //$doctor = Doctores::find($id);
+        $doctor = Doctores::where("id_doctor","=",$id)->get();
+        $count = $doctor->count();
+        if ($count > 0) {
+            return response()->json(['data' => $doctor[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 200);
+        }
     }
 
     /**

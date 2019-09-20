@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-09-2019 a las 05:52:16
+-- Tiempo de generación: 20-09-2019 a las 19:30:29
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -500,33 +500,35 @@ CREATE TABLE `clientes_asegurados` (
   `cat_paises_id_cat_pais` int(11) NOT NULL,
   `cat_municipios_id_cat_municipio` int(11) NOT NULL,
   `cat_estados_id_cat_estado` int(11) NOT NULL,
-  `id_empresa_aseguradora` int(11) NOT NULL
+  `id_empresa_aseguradora` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `clientes_asegurados`
 --
 
-INSERT INTO `clientes_asegurados` (`id_cliente_asegurado`, `nombre`, `apellido_paterno`, `apellido_materno`, `fecha_nacimiento`, `codigo_postal`, `direccion`, `rfc`, `cat_segmentos_mercado_id_cat_segmento_mercado`, `cat_sexos_id_cat_sexo`, `cat_paises_id_cat_pais`, `cat_municipios_id_cat_municipio`, `cat_estados_id_cat_estado`, `id_empresa_aseguradora`) VALUES
-(0, 'Luis', 'Masa', 'Clemente', '1980-09-19', 29000, 'Centro', 'MEAC190980WEDFGH00', 0, 1, 0, 179, 6, 0),
-(1, 'Maria', 'Sol', 'Diaz', '1990-09-19', 29000, 'Centro', 'MEAC190990WEDFGH00', 0, 0, 0, 179, 6, 1),
-(2, 'Alejandra', 'Peña', 'Curiel', '1991-08-19', 29000, 'Centro', 'MEAC190891WEDFGH00', 0, 0, 0, 179, 6, 1),
-(3, 'Claudia', 'Rodríguez', 'Loera', '1985-08-10', 29000, 'Centro', 'MEAC100885WEDFGH00', 0, 0, 0, 179, 6, 0),
-(4, 'Laura', 'Rosado', 'Pedraza', '1985-08-25', 29000, 'Centro', 'MEAC250885WEDFGH00', 0, 0, 0, 179, 6, 0),
-(5, 'Adriana', 'Damián', 'Olvera', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 1),
-(6, 'Enrique', 'Luján', 'Salazar', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1),
-(7, 'Jorge', 'Juárez', 'Maldonado', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 2),
-(8, 'Francisco', 'Caballero', 'Ibarra', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1),
-(9, 'Víctor', 'Espinoza', 'Valle', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 2),
-(10, 'Ricardo', 'Rivera', 'De La Torre', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 2),
-(11, 'Alfredo', 'Buenrostro', 'Ceballos', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1),
-(12, 'Raúl', 'Ramírez', 'Baena', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1),
-(13, 'Sonia', 'Sepúlveda', 'Morales', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 1),
-(14, 'Leonor', 'Maldonado', 'Meza', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 1),
-(15, 'Rosa', 'León', 'Castro', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 0),
-(16, 'Guadalupe', 'Flores', 'Meza', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 2),
-(17, 'Arturo', 'Medina', 'Medina', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1),
-(18, 'Héctor', 'Murillo', 'Aguilar', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 0);
+INSERT INTO `clientes_asegurados` (`id_cliente_asegurado`, `nombre`, `apellido_paterno`, `apellido_materno`, `fecha_nacimiento`, `codigo_postal`, `direccion`, `rfc`, `cat_segmentos_mercado_id_cat_segmento_mercado`, `cat_sexos_id_cat_sexo`, `cat_paises_id_cat_pais`, `cat_municipios_id_cat_municipio`, `cat_estados_id_cat_estado`, `id_empresa_aseguradora`, `created_at`, `updated_at`) VALUES
+(1, 'Luis', 'Masa', 'Clemente', '1980-09-19', 29000, 'Centro', 'MEAC190980WEDFGH00', 0, 1, 0, 179, 6, 0, NULL, NULL),
+(2, 'Maria', 'Sol', 'Diaz', '1990-09-19', 29000, 'Centro', 'MEAC190990WEDFGH00', 0, 0, 0, 179, 6, 1, NULL, NULL),
+(3, 'Alejandra', 'Peña', 'Curiel', '1991-08-19', 29000, 'Centro', 'MEAC190891WEDFGH00', 0, 0, 0, 179, 6, 1, NULL, NULL),
+(4, 'Claudia', 'Rodríguez', 'Loera', '1985-08-10', 29000, 'Centro', 'MEAC100885WEDFGH00', 0, 0, 0, 179, 6, 0, NULL, NULL),
+(5, 'Laura', 'Rosado', 'Pedraza', '1985-08-25', 29000, 'Centro', 'MEAC250885WEDFGH00', 0, 0, 0, 179, 6, 0, NULL, NULL),
+(6, 'Adriana', 'Damián', 'Olvera', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 1, NULL, NULL),
+(7, 'Enrique', 'Luján', 'Salazar', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1, NULL, NULL),
+(8, 'Jorge', 'Juárez', 'Maldonado', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 2, NULL, NULL),
+(9, 'Francisco', 'Caballero', 'Ibarra', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1, NULL, NULL),
+(10, 'Víctor', 'Espinoza', 'Valle', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 2, NULL, NULL),
+(11, 'Ricardo', 'Rivera', 'De La Torre', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 2, NULL, NULL),
+(12, 'Alfredo', 'Buenrostro', 'Ceballos', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1, NULL, NULL),
+(13, 'Raúl', 'Ramírez', 'Baena', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1, NULL, NULL),
+(14, 'Sonia', 'Sepúlveda', 'Morales', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 1, NULL, NULL),
+(15, 'Leonor', 'Maldonado', 'Meza', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 1, NULL, NULL),
+(16, 'Rosa', 'León', 'Castro', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 0, NULL, NULL),
+(17, 'Guadalupe', 'Flores', 'Meza', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 0, 0, 179, 6, 2, NULL, NULL),
+(18, 'Arturo', 'Medina', 'Medina', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 1, NULL, NULL),
+(19, 'Héctor', 'Murillo', 'Aguilar', '1986-08-25', 29000, 'Centro', 'MEAC250886WEDFGH00', 0, 1, 0, 179, 6, 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -539,17 +541,20 @@ CREATE TABLE `doctores` (
   `nombre` varchar(45) DEFAULT NULL,
   `apellido_paterno` varchar(45) DEFAULT NULL,
   `apellido_materno` varchar(45) DEFAULT NULL,
-  `es_cliente` tinyint(1) DEFAULT NULL
+  `es_cliente` tinyint(1) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `doctores`
 --
 
-INSERT INTO `doctores` (`id_doctor`, `nombre`, `apellido_paterno`, `apellido_materno`, `es_cliente`) VALUES
-(0, 'Carlos A.', 'Medina', 'Arias', 0),
-(1, 'Andres', 'Juan', 'Dominguez', 1),
-(2, 'Manuel', 'Molina', 'Paz', 0);
+INSERT INTO `doctores` (`id_doctor`, `nombre`, `apellido_paterno`, `apellido_materno`, `es_cliente`, `created_at`, `updated_at`) VALUES
+(1, 'Carlos A.', 'Medina', 'Arias', 0, '2019-09-20 16:35:15', '0000-00-00 00:00:00'),
+(2, 'Andres', 'Juan', 'Dominguez', 1, '2019-09-20 16:35:15', '0000-00-00 00:00:00'),
+(3, 'Manuel', 'Molina', 'Paz', 0, '2019-09-20 16:35:15', '0000-00-00 00:00:00'),
+(4, 'Luz', 'Morales', 'Mora', 0, '2019-09-20 21:37:06', '2019-09-20 21:37:06');
 
 -- --------------------------------------------------------
 
@@ -558,7 +563,7 @@ INSERT INTO `doctores` (`id_doctor`, `nombre`, `apellido_paterno`, `apellido_mat
 --
 
 CREATE TABLE `doctor_especialidades_medicas` (
-  `id_doctor_especialidad_medica` int(11) DEFAULT NULL,
+  `id_doctor_especialidad_medica` int(11) NOT NULL,
   `id_doctor` int(11) NOT NULL,
   `id_cat_especialidad_medica` int(11) NOT NULL,
   `id_empresa_aseguradora` int(11) NOT NULL
@@ -569,18 +574,18 @@ CREATE TABLE `doctor_especialidades_medicas` (
 --
 
 INSERT INTO `doctor_especialidades_medicas` (`id_doctor_especialidad_medica`, `id_doctor`, `id_cat_especialidad_medica`, `id_empresa_aseguradora`) VALUES
-(NULL, 0, 3, 0),
-(NULL, 2, 4, 0),
-(NULL, 0, 1, 0),
-(NULL, 1, 3, 2),
-(NULL, 1, 1, 1),
-(NULL, 1, 4, 1),
-(NULL, 0, 3, 0),
-(NULL, 2, 4, 0),
-(NULL, 0, 1, 0),
-(NULL, 1, 3, 2),
-(NULL, 1, 1, 1),
-(NULL, 1, 4, 1);
+(1, 0, 3, 0),
+(2, 2, 4, 0),
+(3, 0, 1, 0),
+(4, 1, 3, 2),
+(5, 1, 1, 1),
+(6, 1, 4, 1),
+(7, 0, 3, 0),
+(8, 2, 4, 0),
+(9, 0, 1, 0),
+(10, 1, 3, 2),
+(11, 1, 1, 1),
+(12, 1, 4, 1);
 
 -- --------------------------------------------------------
 
@@ -654,16 +659,16 @@ CREATE TABLE `polizas` (
 
 INSERT INTO `polizas` (`id_poliza`, `fecha_alta`, `fecha_inicio`, `fecha_fin`, `id_cat_vigencia`, `clientes_asegurados_id_cliente_asegurado`, `cat_estatus_polizas_id_cat_estatus_poliza`, `empresas_aseguradoras_id_empresa_aseguradora`, `cat_paises_id_cat_pais`, `cat_municipios_id_cat_municipio`, `cat_estados_id_cat_estado`) VALUES
 (0, '2019-09-19 10:34:09', '2019-09-19 10:34:09', '2020-09-19 10:34:09', 0, 0, 0, 0, 0, 179, 6),
-(1, '2017-09-19 10:34:09', '2017-09-19 10:34:09', '2018-09-19 10:34:09', 0, 1, 0, 0, 0, 179, 6),
+(1, '2017-09-19 10:34:09', '2017-09-19 10:34:09', '2018-09-19 10:34:09', 0, 1, 1, 0, 0, 179, 6),
 (2, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 1, 0, 0, 0, 179, 6),
-(3, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 1, 0, 0, 0, 179, 6),
+(3, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 1, 1, 0, 0, 179, 6),
 (4, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (5, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (6, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (7, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (8, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (9, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
-(10, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(10, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 3, 0, 0, 179, 6),
 (11, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (12, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (13, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
@@ -672,11 +677,11 @@ INSERT INTO `polizas` (`id_poliza`, `fecha_alta`, `fecha_inicio`, `fecha_fin`, `
 (16, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (17, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
 (18, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
-(19, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 0, 0, 0, 179, 6),
+(19, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 2, 3, 0, 0, 179, 6),
 (20, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
 (21, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
 (22, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
-(23, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 0, 0, 0, 179, 6),
+(23, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 3, 3, 0, 0, 179, 6),
 (24, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 4, 0, 0, 0, 179, 6),
 (25, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 0, 4, 0, 0, 0, 179, 6);
 
@@ -747,18 +752,24 @@ ALTER TABLE `cat_sexos`
 -- Indices de la tabla `clientes_asegurados`
 --
 ALTER TABLE `clientes_asegurados`
-  ADD PRIMARY KEY (`id_cliente_asegurado`),
   ADD KEY `fk_clientes_asegurados_cat_segmentos_mercado1_idx` (`cat_segmentos_mercado_id_cat_segmento_mercado`),
   ADD KEY `fk_clientes_asegurados_cat_sexos1_idx` (`cat_sexos_id_cat_sexo`),
   ADD KEY `fk_clientes_asegurados_cat_paises1_idx` (`cat_paises_id_cat_pais`),
   ADD KEY `fk_clientes_asegurados_cat_municipios1_idx` (`cat_municipios_id_cat_municipio`),
-  ADD KEY `fk_clientes_asegurados_cat_estados1_idx` (`cat_estados_id_cat_estado`);
+  ADD KEY `fk_clientes_asegurados_cat_estados1_idx` (`cat_estados_id_cat_estado`),
+  ADD KEY `id_cliente_asegurado` (`id_cliente_asegurado`);
 
 --
 -- Indices de la tabla `doctores`
 --
 ALTER TABLE `doctores`
   ADD PRIMARY KEY (`id_doctor`);
+
+--
+-- Indices de la tabla `doctor_especialidades_medicas`
+--
+ALTER TABLE `doctor_especialidades_medicas`
+  ADD KEY `id_doctor_especialidad_medica` (`id_doctor_especialidad_medica`);
 
 --
 -- Indices de la tabla `empresas_aseguradoras`
@@ -796,6 +807,28 @@ ALTER TABLE `polizas`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `clientes_asegurados`
+--
+ALTER TABLE `clientes_asegurados`
+  MODIFY `id_cliente_asegurado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT de la tabla `doctores`
+--
+ALTER TABLE `doctores`
+  MODIFY `id_doctor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `doctor_especialidades_medicas`
+--
+ALTER TABLE `doctor_especialidades_medicas`
+  MODIFY `id_doctor_especialidad_medica` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
