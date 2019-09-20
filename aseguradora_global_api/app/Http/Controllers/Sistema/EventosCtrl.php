@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Sistema;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Models\Sistema\Eventos;
+use App\Http\Models\Sistema\Polizas;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class EventosCtrl extends Controller
 {
@@ -37,38 +41,33 @@ class EventosCtrl extends Controller
      */
     public function store(Request $request)
     {
-        $datos = Input::json()->all();
+        $request = Input::json()->all();
+        $request = (Object)$request;
 
         $success = false;
         DB::beginTransaction();
+        $success = false;
 
         try {
             $tabla = new Eventos;
 
-            $datos = (object) $datos;
-            $poliza = Polizas::where('id', $datos->id_poliza)->first();
+            $datos = (object) $request;
+            $poliza = Polizas::where('id_poliza', $datos->id_poliza)->first();
 
-            //si no jaja pasar a objetos
-            //$poliza = (object) $poliza;
-            if($poliza->cat_estatus_polizas_id_cat_estatus_poliza == 1){
-                // Va el insert de poliza
-            }else{
-                // No inert
+            if($poliza->cat_estatus_polizas_id_cat_estatus_poliza == 1) {
+                $success = true;
             }
 
-            $success = true;
-
         } catch (\Exception $e){
-            return Response::json($e->getMessage(), 500);
+            return response()->json($e->getMessage(), 500);
         }
 
         if ($success){
             DB::commit();
-
-            return Response::json(array("status" => 201,"messages" => "Creado", "data" => $tabla), 201);
+            return response()->json(["data" => $tabla, 'success' => true, "mensaje" => "Guardado Correctamente"], 201);
         } else{
             DB::rollback();
-            return Response::json(array("status" => 409,"messages" => "Conflicto"), 409);
+            return response()->json(['data' => [], "success" => false, "mensaje" => "Poliza no vigente"], 409);
         }
     }
 

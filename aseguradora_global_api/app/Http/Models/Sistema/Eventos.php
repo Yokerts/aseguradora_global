@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Eventos extends Model
 {
-    protected $table = "eventos";
+    //protected $table = "eventos";
+    protected $fillable = [
+        "fecha_alta",
+        "id_doctor_especialidad_medica",
+        "id_poliza"
+    ];
 }
