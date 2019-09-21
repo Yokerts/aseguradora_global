@@ -45,16 +45,19 @@ class DoctoresCtrl extends Controller
         if (property_exists($request, 'id_cat_especialidad_medica')) {
 
 
-            $sql= DB::table('doctores')
+            $doctores = DB::table('doctores')
                 ->join('doctor_especialidades_medicas', 'doctor_especialidades_medicas.id_doctor', '=', 'doctores.id_doctor')
-                ->join('cat_especialidades_medicas', ' doctor_especialidades_medicas.id_cat_especialidad_medica', '=', 'cat_especialidades_medicas.id_cat_especialidad_medica')
+                ->join('cat_especialidades_medicas', 'doctor_especialidades_medicas.id_cat_especialidad_medica', '=', 'cat_especialidades_medicas.id_cat_especialidad_medica')
                 ->select('doctores.id_doctor', 'doctores.nombre', 'cat_especialidades_medicas.especialidad_medica')
-                ->where('doctores.id_doctor', '=', 1)
+                ->where('doctores.id_doctor', '=', $request->id_cat_especialidad_medica)
                 ->get();
 
-            dd($sql);
-
-            return response()->json(['data' => $doctor, 'success' => true, 'mensaje' => "Guardado Correctamente"], 201);
+            $count = $doctores->count();
+            if ($count > 0) {
+                return response()->json(['data' => $doctores, 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+            } else {
+                return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 200);
+            }
 
         } else {
 

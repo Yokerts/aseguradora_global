@@ -1,0 +1,71 @@
+<div id="wrapper">
+
+    <div ng-include="'views/sidemenu.html'" class="bg-gradient-primary"></div>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <div id="content">
+
+            <div ng-include="'views/header.html'"></div>
+
+            <div class="container-fluid">
+                <form>
+                    <div class="col col-xs-12">
+                        <div class="row">
+                            <div class="col col-sm-4">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" ng-model="form.empresa_aseguradora" class="form-control" placeholder="Nombre de la empresa">
+                                </div>
+                            </div>
+                            <div class="col col-sm-2">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <button type="submit" class="form-control btn btn-primary" ng-click="agregar()">Agregar usuario</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <br>
+
+                <form>
+                    <div class="col col-xs-12">
+                        <div class="row">
+                            <div class="col col-xs-4">
+                                <div class="form-group">
+                                    <label>Buscar</label>
+                                    <input type="text" class="form-control" ng-model="search" placeholder="Nombre de la empresa">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col col-sm-12">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Empresa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-if="empresas.length == 0">
+                                <td colspan="2" align="center">Sin registros</td>
+                            </tr>
+                            <tr ng-repeat="item in empresas | filter: search">
+                                <td>{{item.id_empresa_aseguradora}}</td>
+                                <td>{{item.empresa_aseguradora}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/sb-admin-2.min.js"></script>

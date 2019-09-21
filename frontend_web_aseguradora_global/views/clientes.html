@@ -1,0 +1,126 @@
+<div id="wrapper">
+
+    <div ng-include="'views/sidemenu.html'" class="bg-gradient-primary"></div>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <div id="content">
+
+            <div ng-include="'views/header.html'"></div>
+
+            <div class="container-fluid">
+              <!--  <form>
+                    <div class="col col-sm-12">
+                        <div class="row">
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>Marca</label>
+                                    <input type="text" class="form-control" placeholder="Marca">
+                                </div>
+                            </div>
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>Modelo</label>
+                                    <input type="text" class="form-control" placeholder="Modelo">
+                                </div>
+                            </div>
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>No. Serie</label>
+                                    <input type="text" class="form-control" placeholder="No. Serie">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>Fecha alta</label>
+                                    <input type="datetime-local" class="form-control" placeholder="Fecha alta">
+                                </div>
+                            </div>
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>Estado</label>
+                                    <select class="form-control" ng-model="form.estado" ng-change="listMunicipios(form.estado)">
+                                        <option disabled value="">Selecciona un estado</option>
+                                        <option ng-repeat="item in estados">{{item.estado}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col col-sm-3">
+                                <div class="form-group">
+                                    <label>Municipio</label>
+                                    <select class="form-control" ng-model="form.municipio">
+                                        <option disabled value="">Selecciona un municipio</option>
+                                        <option ng-repeat="item in municipios">{{item.municipio}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col col-sm-2">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <button type="submit" class="form-control btn btn-primary" ng-click="agregar()">Agregar equipo</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>-->
+
+                <br>
+
+                <form>
+                    <div class="col col-xs-12">
+                        <div class="row">
+                            <div class="col col-xs-4">
+                                <div class="form-group">
+                                    <label>Buscar</label>
+                                    <input type="text" ng-model="search" class="form-control" placeholder="Buscar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col col-sm-12">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido Paterno</th>
+                                <th scope="col">Apellido Materno</th>
+                                <th scope="col">Código Postal</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">RFC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-if="clientes.length == 0">
+                                <td colspan="2" align="center">Sin registros</td>
+                            </tr>
+                            <tr ng-repeat="item in clientes | filter: search">
+                                <td>{{item.id_cliente_asegurado}}</td>
+                                <td>{{item.nombre}}</td>
+                                <td>{{item.apellido_paterno}}</td>
+                                <td>{{item.apellido_materno}}</td>
+                                <td>{{item.codigo_postal}}</td>
+                                <td>{{item.direccion}}</td>
+                                <td>{{item.rfc}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/sb-admin-2.min.js"></script>
