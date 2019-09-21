@@ -48,7 +48,13 @@ class EstadosCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $estados = Estados::where("id_cat_estado","=",$id)->get();
+        $count = $estados->count();
+        if ($count > 0) {
+            return response()->json(['data' => $estados[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**

@@ -49,7 +49,13 @@ class EstatusPolizasCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $estatus_polizas = EstatusPolizas::where("id_cat_estatus_poliza","=",$id)->get();
+        $count = $estatus_polizas->count();
+        if ($count > 0) {
+            return response()->json(['data' => $estatus_polizas[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**

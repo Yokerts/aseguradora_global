@@ -47,7 +47,13 @@ class SexosCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $sexos = Sexos::where("id_cat_sexo","=",$id)->get();
+        $count = $sexos->count();
+        if ($count > 0) {
+            return response()->json(['data' => $sexos[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**

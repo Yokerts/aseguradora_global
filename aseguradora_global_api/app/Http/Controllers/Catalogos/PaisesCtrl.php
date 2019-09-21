@@ -48,7 +48,13 @@ class PaisesCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $paises = Paises::where("id_cat_pais","=",$id)->get();
+        $count = $paises->count();
+        if ($count > 0) {
+            return response()->json(['data' => $paises[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**

@@ -49,7 +49,13 @@ class MunicipiosCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $municipios = Municipios::where("id_cat_municipio","=",$id)->get();
+        $count = $municipios->count();
+        if ($count > 0) {
+            return response()->json(['data' => $municipios[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**

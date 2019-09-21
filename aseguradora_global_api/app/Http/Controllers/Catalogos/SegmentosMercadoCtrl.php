@@ -48,7 +48,13 @@ class SegmentosMercadoCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $segmentos_mercado = SegmentosMercado::where("id_cat_segmento_mercado","=",$id)->get();
+        $count = $segmentos_mercado->count();
+        if ($count > 0) {
+            return response()->json(['data' => $segmentos_mercado[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**

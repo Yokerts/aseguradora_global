@@ -42,17 +42,32 @@ class DoctoresCtrl extends Controller
         $request = Input::json()->all();
         $request = (Object) $request;
 
-        //dd($request);
+        if (property_exists($request, 'id_cat_especialidad_medica')) {
 
-        $doctor = new Doctores([
-            'nombre' => $request->nombre,
-            'apellido_paterno' => $request->apellido_paterno,
-            'apellido_materno' => $request->apellido_materno,
-            'es_cliente' => $request->es_cliente
-        ]);
 
-        $doctor->save();
-        return response()->json(['data' => $doctor, 'success' => true, 'mensaje' => "Guardado Correctamente"], 201);
+            $sql= DB::table('doctores')
+                ->join('doctor_especialidades_medicas', 'doctor_especialidades_medicas.id_doctor', '=', 'doctores.id_doctor')
+                ->join('cat_especialidades_medicas', ' doctor_especialidades_medicas.id_cat_especialidad_medica', '=', 'cat_especialidades_medicas.id_cat_especialidad_medica')
+                ->select('doctores.id_doctor', 'doctores.nombre', 'cat_especialidades_medicas.especialidad_medica')
+                ->where('doctores.id_doctor', '=', 1)
+                ->get();
+
+            dd($sql);
+
+            return response()->json(['data' => $doctor, 'success' => true, 'mensaje' => "Guardado Correctamente"], 201);
+
+        } else {
+
+            $doctor = new Doctores([
+                'nombre' => $request->nombre,
+                'apellido_paterno' => $request->apellido_paterno,
+                'apellido_materno' => $request->apellido_materno,
+                'es_cliente' => $request->es_cliente
+            ]);
+
+            $doctor->save();
+            return response()->json(['data' => $doctor, 'success' => true, 'mensaje' => "Guardado Correctamente"], 201);
+        }
     }
 
     /**

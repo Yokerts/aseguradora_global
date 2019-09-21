@@ -49,7 +49,13 @@ class EspecialidadesMedicasCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $especialidades_medicas = EspecialidadesMedicas::where("id_cat_especialidad_medica","=",$id)->get();
+        $count = $especialidades_medicas->count();
+        if ($count > 0) {
+            return response()->json(['data' => $especialidades_medicas[0], 'success' => true, 'mensaje' => 'Datos encontrados'], 200);
+        } else {
+            return response()->json(['data' => [], 'success' => false, 'mensaje' => 'Datos no encontrados'], 204);
+        }
     }
 
     /**
