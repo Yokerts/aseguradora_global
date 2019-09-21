@@ -16,20 +16,6 @@ FROM cat_vigencias;
 INSERT INTO doctor_especialidades_medicas
 VALUES (1, 4, 1);
 
-# nombre,
-# apellido_paterno,
-# apellido_materno,
-# fecha_nacimiento,
-# codigo_postal,
-# edad,
-# direccion,
-# rfc,
-# cat_segmentos_mercado_id_cat_segmento_mercado,
-# cat_sexos_id_cat_sexo,
-# cat_paises_id_cat_pais,
-# cat_municipios_id_cat_municipio,
-# cat_estados_id_cat_estado
-
 INSERT INTO clientes_asegurados
 VALUES (18,
         'Héctor',
@@ -45,17 +31,6 @@ VALUES (18,
         179,
         6);
 
-
-# id_poliza
-# fecha_alta
-# fecha_inicio
-# fecha_fin
-# vigencia
-# clientes_asegurados_id_cliente_asegurado
-# cat_estatus_polizas_id_cat_estatus_poliza
-# cat_paises_id_cat_pais
-# cat_municipios_id_cat_municipio
-# cat_estados_id_cat_estado
 
 INSERT INTO polizas
 VALUES (25,
@@ -128,29 +103,45 @@ FROM (
 
 
 
-select	*
-from polizas as p
-     inner join doctor_especialidades_medicas as rel on rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
-where p.fecha_alta between '20160101' and '20161231'
+SELECT	*
+FROM polizas AS p
+     INNER JOIN doctor_especialidades_medicas AS rel ON rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
+WHERE p.fecha_alta BETWEEN '20160101' AND '20161231';
 
-select	*
-from polizas as p
-       inner join doctor_especialidades_medicas as rel on rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
-       inner join empresas_aseguradoras as ea on ea.id_empresa_aseguradora=rel.id_empresa_aseguradora
-       inner join doctores as d on d.id_doctor=rel.id_doctor
-       inner join cat_especialidades_medicas as catE on catE.id_cat_especialidad_medica=rel.id_cat_especialidad_medica
-where p.fecha_alta between '20160101' and '20161231'
+SELECT 	*
+FROM polizas AS p
+       INNER JOIN doctor_especialidades_medicas AS rel ON rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
+       INNER JOIN empresas_aseguradoras AS ea ON ea.id_empresa_aseguradora=rel.id_empresa_aseguradora
+       INNER JOIN doctores AS d ON d.id_doctor=rel.id_doctor
+       INNER JOIN cat_especialidades_medicas AS catE ON catE.id_cat_especialidad_medica=rel.id_cat_especialidad_medica
+WHERE p.fecha_alta BETWEEN '20160101' AND '20161231';
 
-select  * from
-  (
-    select
+SELECT *
+FROM (
+    SELECT
       catE.especialidad_medica
-         ,count(p.id_poliza) as n_polizas
-    from polizas as p
-           inner join doctor_especialidades_medicas as rel on rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
-           inner join empresas_aseguradoras as ea on ea.id_empresa_aseguradora=rel.id_empresa_aseguradora
-           inner join doctores as d on d.id_doctor=rel.id_doctor
-           inner join cat_especialidades_medicas as catE on catE.id_cat_especialidad_medica=rel.id_cat_especialidad_medica
-    where p.fecha_alta between '20160101' and '20161231'
-    group by catE.especialidad_medica
-  ) as t order by n_polizas desc
+         ,count(p.id_poliza) AS n_polizas
+    FROM polizas AS p
+           INNER JOIN doctor_especialidades_medicas AS rel ON rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
+           INNER JOIN empresas_aseguradoras AS ea ON ea.id_empresa_aseguradora=rel.id_empresa_aseguradora
+           INNER JOIN doctores AS d ON d.id_doctor=rel.id_doctor
+           INNER JOIN cat_especialidades_medicas AS catE ON catE.id_cat_especialidad_medica=rel.id_cat_especialidad_medica
+    WHERE p.fecha_alta BETWEEN '20160101' AND '20161231'
+    GROUP BY catE.especialidad_medica
+  ) AS t ORDER BY n_polizas DESC
+
+SELECT *,(100/total_polizas)*n_polizas AS porc
+FROM (
+    SELECT
+      catE.especialidad_medica
+         ,count(p.id_poliza) AS n_polizas
+         ,(SELECT  count(id_poliza) FROM polizas
+         WHERE fecha_alta BETWEEN '20160101' AND '20161231') AS total_polizas
+          FROM polizas AS p
+          INNER JOIN doctor_especialidades_medicas AS rel ON rel.id_doctor_especialidad_medica=p.id_doctor_especialidad_medica
+           INNER JOIN empresas_aseguradoras AS ea ON ea.id_empresa_aseguradora=rel.id_empresa_aseguradora
+           INNER JOIN doctores AS d ON d.id_doctor=rel.id_doctor
+           INNER JOIN cat_especialidades_medicas AS catE ON catE.id_cat_especialidad_medica=rel.id_cat_especialidad_medica
+    WHERE p.fecha_alta BETWEEN '20160101' AND '20161231'
+    GROUP BY catE.especialidad_medica
+  ) AS t ORDER BY n_polizas DESC LIMIT 5;

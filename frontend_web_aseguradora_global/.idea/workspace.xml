@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="341ebc40-67b2-403c-9729-5ac64cf023a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../aseguradora_global_api/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/frontend_web_aseguradora_global.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controllers/empresasCtrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/clientes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/doctores.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/empresas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diagrama_BD.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Diagrama_BD.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aseguradora_global.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../aseguradora_global.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../aseguradora_global_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aseguradora_global_api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aseguradora_global_api/app/Http/Controllers/Sistema/DoctoresCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/../aseguradora_global_api/app/Http/Controllers/Sistema/DoctoresCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aseguradora_global_api/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/../aseguradora_global_api/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aseguradora_global_api/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/../aseguradora_global_api/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/polizas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+            <state relative-caret-position="787">
+              <caret line="107" column="54" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -219,12 +203,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569042276630</updated>
-      <workItem from="1569042278087" duration="7112000" />
+      <workItem from="1569042278087" duration="7791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7112000" />
+    <option name="totallyTimeSpent" value="7791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -377,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/polizas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        <state relative-caret-position="787">
+          <caret line="107" column="54" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
         </state>
       </provider>
     </entry>
