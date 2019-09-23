@@ -2,7 +2,11 @@
 var app = angular.module('myApp', ['ui.router', 'ui.bootstrap']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
-	$stateProvider.state('empresas', {
+	$stateProvider.state('transacciones', {
+		url: '/transacciones',
+		templateUrl: 'views/transacciones.html',
+		controller: 'TransaccionesCtrl'
+	}).state('empresas', {
 		url: '/empresas',
 		templateUrl: 'views/empresas.html',
 		controller: 'EmpresasCtrl'
@@ -24,5 +28,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		controller: 'EventosCtrl'
 	});
 
-	$urlRouterProvider.otherwise('/empresas');
+	$urlRouterProvider.otherwise('/transacciones');
 });

@@ -4,7 +4,7 @@ app.controller('EventosCtrl' , function($scope, $state, $http, $uibModal, $log, 
 	$scope.eventos = [];
 	$scope.form = {};
 
-	$scope.request = function (metodo, ruta, datos, id_alumno ) {
+	$scope.request = function (metodo, ruta, datos) {
 		peticionesHTTP.peticion(metodo, ruta, datos).then(function(response) {
 			console.log("Controlador", response.data.eventos);
 			if (metodo == "GET") {

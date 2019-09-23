@@ -3,7 +3,7 @@ app.controller('EmpresasCtrl' , function($scope, $state, $http, $uibModal, $log,
     $scope.dataTable = [];
     $scope.form = {};
 
-    $scope.request = function (metodo, ruta, datos, id_alumno ) {
+    $scope.request = function (metodo, ruta, datos) {
         peticionesHTTP.peticion(metodo, ruta, datos).then(function(response) {
             console.log("Controlador", response.data.empresas_aseguradoras);
             if (metodo == "GET") {

@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59fa932-cba4-44af-8ec9-22558780756c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/transaccionesCtrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/transacciones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/clientesCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/clientesCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/doctoresCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/doctoresCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/empresasCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/empresasCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/eventosCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/eventosCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/polizasCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/polizasCtrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/sidemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/sidemenu.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,64 +75,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/DoctoresCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
+            <state relative-caret-position="192">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/946c8915-a39b-4ef4-9c13-02dfebf10ca8/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/946c8915-a39b-4ef4-9c13-02dfebf10ca8/console.sql">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="146" column="41" lean-forward="true" selection-end-line="146" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/DoctoresCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
-              <folding>
-                <element signature="e#48#76#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-              <folding>
-                <element signature="e#50#78#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EmpresasAseguradorasCtrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="413">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
               </folding>
@@ -154,7 +136,6 @@
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/Sexos.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/EspecialidadesMedicas.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Catalogos/EstatusPolizas.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Sistema/Doctores.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Sistema/ClientesAsegurados.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Sistema/ClientesAseguradosCtrl.php" />
@@ -174,7 +155,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Catalogos/EspecialidadesMedicasCtrl.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Sistema/DoctoresCtrl.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/../Peticiones-HTTP.json" />
+        <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/946c8915-a39b-4ef4-9c13-02dfebf10ca8/console.sql" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php" />
       </list>
     </option>
   </component>
@@ -280,10 +265,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="699" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -336,22 +321,6 @@
               <item name="aseguradora_global_api" type="b2602c69:ProjectViewProjectNode" />
               <item name="aseguradora_global_api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-              <item name="Catalogos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aseguradora_global_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aseguradora_global_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-              <item name="Sistema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aseguradora_global_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aseguradora_global_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,10 +337,10 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend_web_aseguradora_global" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SQL" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -410,12 +379,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568911714844</updated>
-      <workItem from="1568911718336" duration="61079000" />
+      <workItem from="1568911718336" duration="79736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61079000" />
+    <option name="totallyTimeSpent" value="79736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -425,7 +394,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.22995462" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.4304419" />
+      <window_info anchor="bottom" id="Database Console" weight="0.3715221" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
@@ -446,21 +415,22 @@
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.28441754" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49924356" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.4304419" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49924356" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Changes" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Database" order="0" weight="0.22617246" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -481,13 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -581,16 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/PolizasCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="27" />
-          <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/Sistema/EspecialidadMedica.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -663,37 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EmpresasAseguradorasCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/Sistema/Eventos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="6" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
-          <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,20 +633,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/DoctoresCtrl.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EmpresasAseguradorasCtrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        <state relative-caret-position="464">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding>
             <element signature="e#48#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Peticiones-HTTP.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5780">
+          <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/PolizasCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/946c8915-a39b-4ef4-9c13-02dfebf10ca8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="146" column="41" lean-forward="true" selection-end-line="146" selection-end-column="41" />
+        <state relative-caret-position="-6">
+          <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/DoctoresCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

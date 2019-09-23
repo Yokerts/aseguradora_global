@@ -1,0 +1,374 @@
+{
+  "peticiones": [
+    {
+      "_id": "req_2f5dcdcf75fd448eab06e813ee672358",
+      "authentication": {},
+      "body": {},
+      "created": 1568915781157,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1568915781157,
+      "method": "GET",
+      "modified": 1569023143343,
+      "name": "catalogos",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/cat_especialidades_medicas/2",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "created": 1567261992288,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1567261992288,
+      "modified": 1568915797314,
+      "name": "aseguradora_global",
+      "parentId": "wrk_ac822257050f49cfb587bbcc8f9f5b29",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_ac822257050f49cfb587bbcc8f9f5b29",
+      "created": 1567261960058,
+      "description": "",
+      "modified": 1567261960058,
+      "name": "Insomnia",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_5c8ccc2649634a57a93d6ded83bd3fa3",
+      "authentication": {},
+      "body": {},
+      "created": 1568955048716,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1568955048716,
+      "method": "GET",
+      "modified": 1568998954370,
+      "name": "doctores",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/doctores/2",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1c45bdfb6dd5403f9b9b09b661dc1d73",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nombre\" : \"Luz\",\n  \"apellido_paterno\" : \"Morales\",\n  \"apellido_materno\" : \"Mora\",\n  \"es_cliente\" : 0\n}"
+      },
+      "created": 1568996082195,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_bb39bf4225d34777b571e8756205322c",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1568996082195,
+      "method": "POST",
+      "modified": 1569106546401,
+      "name": "add doctor",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/doctores",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2131568ae9db4aa282ef7c0472e692ed",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": " {\n\t\"nombre\" : \"Luis\",\n  \"apellido_paterno\" : \"Masa\",\n  \"apellido_materno\" : \"Clemente\",\n  \"fecha_nacimiento\" : \"1980-09-19\",\n  \"codigo_postal\" : 29000,\n  \"direccion\" : \"Centro\",\n  \"rfc\" : \"MEAC190980WEDFGH00\",\n  \"id_cat_segmento_mercado\" : 0,\n  \"cat_sexos_id_cat_sexo\" : 1,\n  \"cat_paises_id_cat_pais\" : 0,\n  \"cat_municipios_id_cat_municipio\" : 179,\n  \"cat_estados_id_cat_estado\" : 6,\n  \"id_empresa_aseguradora\" : 0\n}"
+      },
+      "created": 1568999876388,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_8e8a26a1bf5d469087be3e9b253b257d",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1568997970034.5,
+      "method": "POST",
+      "modified": 1569000323107,
+      "name": "add_clientes_asegurados",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/clientes_asegurados",
+      "_type": "request"
+    },
+    {
+      "_id": "req_6127992f6e7e40a8a9ed1c4d7cdf7280",
+      "authentication": {},
+      "body": {},
+      "created": 1569001127628,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1568997026114.75,
+      "method": "GET",
+      "modified": 1569005115533,
+      "name": "clientes_asegurados",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/clientes_asegurados/2",
+      "_type": "request"
+    },
+    {
+      "_id": "req_8f42c95a3e31448ca686f4a58492c5da",
+      "authentication": {},
+      "body": {},
+      "created": 1569009467957,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1569009467957,
+      "method": "GET",
+      "modified": 1569010070570,
+      "name": "empresa_aseguradora",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/empresas_aseguradoras/2",
+      "_type": "request"
+    },
+    {
+      "_id": "req_89397cb51b8a4634a6b445f09fb29f69",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": " {\n\t\"empresa_aseguradora\" : \"Metlife México, S.A. de C.V.\"\n}"
+      },
+      "created": 1569009714109,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_a7653d5abed64aebbeb6757be3a93c34",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1569009714109,
+      "method": "POST",
+      "modified": 1569009790999,
+      "name": "add_empresa_aseguradora",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/empresas_aseguradoras",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ff2ff5112df04b8cb7a71b7f343f95d2",
+      "authentication": {},
+      "body": {},
+      "created": 1569011273069,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1569011273069,
+      "method": "GET",
+      "modified": 1569014319948,
+      "name": "polizas",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/polizas/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5e496ded48d543ebafd6affcab3ea08c",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n \"fecha_alta\" : \"2019-09-19T14:57:00\",\n \"fecha_inicio\" : \"2019-09-19T14:57:00\",\n \"fecha_fin\" : \"2020-09-19T14:57:00\",\n \"id_cat_vigencia\" : 1,\n \"id_cliente_asegurado\" : 1,\n \"id_cat_estatus_poliza\" : 1,\n \"id_empresa_seguradora\" : 1,\n \"id_cat_pais\" : 1,\n \"id_cat_municipio\" : 180,\n \"id_cat_estado\" : 7\n}"
+      },
+      "created": 1569011286158,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_d4011ae018254ac9bc9fb3c52a46f841",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1569011286158,
+      "method": "POST",
+      "modified": 1569020282135,
+      "name": "add_poliza",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/polizas",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fa1b81ef082847a5a6c61f80c2626ea4",
+      "authentication": {},
+      "body": {},
+      "created": 1569020375579,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1569020375579,
+      "method": "GET",
+      "modified": 1569020385395,
+      "name": "eventos",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/eventos",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ff71f5b26204445fad7c126b609da040",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"fecha_alta\" : \"2019-09-19T14:57:00\",\n\t\"id_doctor_especialidad_medica\": 1,\n\t\"id_poliza\" : 24\n}"
+      },
+      "created": 1569020404943,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_69dbaca39d3741dba3c4482fa879a127",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1569020404943,
+      "method": "POST",
+      "modified": 1569021421932,
+      "name": "add_evento",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/eventos",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b9aed601bfe94077a732b2801fa70658",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"cant_clientes_mas_polizas\": 10\n}"
+      },
+      "created": 1569185331766,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_8edb5ab969ef41d6b3c4aa5b4da7b170",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1569193551214,
+      "method": "POST",
+      "modified": 1569204726006,
+      "name": "transaccion1",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/transacciones",
+      "_type": "request"
+    },
+    {
+      "_id": "req_60a6e3438e9c489db9b5b3a9f3ee9434",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\t\"cant_especialidades_mas_generadas\": 3\n}\t"
+      },
+      "created": 1569193551164,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_8548f9fa5d82484a8e562f33ee034a56",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1569193551164,
+      "method": "POST",
+      "modified": 1569202339111,
+      "name": "transaccion2",
+      "parameters": [],
+      "parentId": "fld_5c60160e40ec49fcaa57bd47741d299e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://127.0.0.1:8000/api/transacciones",
+      "_type": "request"
+    }
+  ]
+}

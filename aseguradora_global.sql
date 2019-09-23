@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-09-2019 a las 07:13:07
+-- Tiempo de generación: 23-09-2019 a las 04:17:52
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -553,7 +553,9 @@ INSERT INTO `doctores` (`id_doctor`, `nombre`, `apellido_paterno`, `apellido_mat
 (1, 'Carlos A.', 'Medina', 'Arias', 0, '2019-09-20 16:35:15', '0000-00-00 00:00:00'),
 (2, 'Andres', 'Juan', 'Dominguez', 1, '2019-09-20 16:35:15', '0000-00-00 00:00:00'),
 (3, 'Manuel', 'Molina', 'Paz', 0, '2019-09-20 16:35:15', '0000-00-00 00:00:00'),
-(4, 'Luz', 'Morales', 'Mora', 0, '2019-09-20 21:37:06', '2019-09-20 21:37:06');
+(4, 'Luz', 'Morales', 'Mora', 0, '2019-09-20 21:37:06', '2019-09-20 21:37:06'),
+(5, 'Carlos', 'Medina', 'Olazo', 0, '2019-09-22 04:08:02', '2019-09-22 04:08:02'),
+(6, 'Rodolfo', 'Mateos', 'Morales', 0, '2019-09-22 04:08:52', '2019-09-22 04:08:52');
 
 -- --------------------------------------------------------
 
@@ -606,7 +608,12 @@ INSERT INTO `empresas_aseguradoras` (`id_empresa_aseguradora`, `empresa_asegurad
 (2, 'Aseguradora Insurgentes, S.A. de C.V'),
 (3, 'Aseguradora Patrimonial Vida, S.A.'),
 (4, 'Aserta Seguros Vida, S.A. de C.V., Grupo Financiero Aserta'),
-(5, 'Metlife México, S.A. de C.V.');
+(5, 'Metlife México, S.A. de C.V.'),
+(6, 'Nueva empresa aseguradora'),
+(7, 'Empresa 2'),
+(8, 'Empresa 3'),
+(9, 'Empresa 4'),
+(10, 'Empresa 5');
 
 -- --------------------------------------------------------
 
@@ -649,7 +656,7 @@ CREATE TABLE `polizas` (
   `id_cat_vigencia` int(11) DEFAULT NULL,
   `clientes_asegurados_id_cliente_asegurado` int(11) NOT NULL,
   `cat_estatus_polizas_id_cat_estatus_poliza` int(11) NOT NULL,
-  `empresas_aseguradoras_id_empresa_aseguradora` int(11) NOT NULL,
+  `id_doctor_especialidad_medica` int(11) NOT NULL,
   `cat_paises_id_cat_pais` int(11) NOT NULL,
   `cat_municipios_id_cat_municipio` int(11) NOT NULL,
   `cat_estados_id_cat_estado` int(11) NOT NULL,
@@ -661,7 +668,7 @@ CREATE TABLE `polizas` (
 -- Volcado de datos para la tabla `polizas`
 --
 
-INSERT INTO `polizas` (`id_poliza`, `fecha_alta`, `fecha_inicio`, `fecha_fin`, `id_cat_vigencia`, `clientes_asegurados_id_cliente_asegurado`, `cat_estatus_polizas_id_cat_estatus_poliza`, `empresas_aseguradoras_id_empresa_aseguradora`, `cat_paises_id_cat_pais`, `cat_municipios_id_cat_municipio`, `cat_estados_id_cat_estado`, `created_at`, `updated_at`) VALUES
+INSERT INTO `polizas` (`id_poliza`, `fecha_alta`, `fecha_inicio`, `fecha_fin`, `id_cat_vigencia`, `clientes_asegurados_id_cliente_asegurado`, `cat_estatus_polizas_id_cat_estatus_poliza`, `id_doctor_especialidad_medica`, `cat_paises_id_cat_pais`, `cat_municipios_id_cat_municipio`, `cat_estados_id_cat_estado`, `created_at`, `updated_at`) VALUES
 (1, '2019-09-19 10:34:09', '2019-09-19 10:34:09', '2020-09-19 10:34:09', 1, 3, 1, 2, 1, 179, 6, '2019-09-20 20:08:51', NULL),
 (2, '2017-09-19 10:34:09', '2017-09-19 10:34:09', '2018-09-19 10:34:09', 1, 1, 2, 1, 1, 179, 6, '2019-09-20 20:08:51', NULL),
 (3, '2016-06-19 10:34:09', '2016-06-19 10:34:09', '2017-06-19 10:34:09', 1, 1, 1, 3, 1, 179, 6, '2019-09-20 20:08:51', NULL),
@@ -811,7 +818,7 @@ ALTER TABLE `polizas`
   ADD PRIMARY KEY (`id_poliza`),
   ADD KEY `fk_polizas_clientes_asegurados1_idx` (`clientes_asegurados_id_cliente_asegurado`),
   ADD KEY `fk_polizas_cat_estatus_polizas1_idx` (`cat_estatus_polizas_id_cat_estatus_poliza`),
-  ADD KEY `fk_polizas_empresas_aseguradoras1_idx` (`empresas_aseguradoras_id_empresa_aseguradora`),
+  ADD KEY `fk_polizas_empresas_aseguradoras1_idx` (`id_doctor_especialidad_medica`),
   ADD KEY `fk_polizas_cat_paises1_idx` (`cat_paises_id_cat_pais`),
   ADD KEY `fk_polizas_cat_municipios1_idx` (`cat_municipios_id_cat_municipio`),
   ADD KEY `fk_polizas_cat_estados1_idx` (`cat_estados_id_cat_estado`),
@@ -873,7 +880,7 @@ ALTER TABLE `clientes_asegurados`
 -- AUTO_INCREMENT de la tabla `doctores`
 --
 ALTER TABLE `doctores`
-  MODIFY `id_doctor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_doctor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `doctor_especialidades_medicas`
@@ -885,7 +892,7 @@ ALTER TABLE `doctor_especialidades_medicas`
 -- AUTO_INCREMENT de la tabla `empresas_aseguradoras`
 --
 ALTER TABLE `empresas_aseguradoras`
-  MODIFY `id_empresa_aseguradora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_empresa_aseguradora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `eventos`

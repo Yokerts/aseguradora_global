@@ -20,7 +20,7 @@ app.controller('ClientesCtrl' , function($scope, $state, $http, $uibModal, $log,
 			"cat_estados_id_cat_estado" : 6,
 			"id_empresa_aseguradora" : 0
 	}*/
-	$scope.request = function (metodo, ruta, datos, id_alumno ) {
+	$scope.request = function (metodo, ruta, datos) {
 		peticionesHTTP.peticion(metodo, ruta, datos).then(function(response) {
 			console.log("Controlador", response.data.clientes_asegurados);
 			if (metodo == "GET") {

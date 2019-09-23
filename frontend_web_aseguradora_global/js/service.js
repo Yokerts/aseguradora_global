@@ -19,4 +19,6 @@ app.service("peticionesHTTP", function($http, $log, Config, $q) {
 		});
 		return defered.promise;
 	} ;
-})
+});
+
+

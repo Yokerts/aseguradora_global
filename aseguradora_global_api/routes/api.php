@@ -30,3 +30,4 @@ Route::resource('/clientes_asegurados', 'Sistema\ClientesAseguradosCtrl')->middl
 Route::resource('/doctores', 'Sistema\DoctoresCtrl')->middleware('cors');
 Route::resource('/polizas', 'Sistema\PolizasCtrl')->middleware('cors');
 Route::resource('/eventos', 'Sistema\EventosCtrl')->middleware('cors');
+Route::resource('/transacciones', 'Sistema\TransaccionesCtrl')->middleware('cors');

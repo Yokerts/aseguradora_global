@@ -1,0 +1,101 @@
+<div id="wrapper">
+
+    <div ng-include="'views/sidemenu.html'" class="bg-gradient-primary"></div>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <div id="content">
+
+            <div ng-include="'views/header.html'"></div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <form>
+                            <div class="col col-xs-12">
+                                <h5 style="color:red">Las 5 especialidades más generadas de Julio 2016 vs Julio 2017 en comparación en una distribución porcentual</h5>
+                                <div class="row">
+                                    <div class="col col-xs-4">
+                                        <div class="form-group">
+                                            <label>Buscar</label>
+                                            <input type="text" class="form-control" ng-model="search" placeholder="Buscar especialidad">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="col col-sm-12">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th>Especialidad</th>
+                                    <th>Total polizas</th>
+                                    <th>Cantidad de polizas</th>
+                                    <th>Porcentaje</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-if="especialidades.length == 0">
+                                    <td colspan="5" align="center">Sin registros</td>
+                                </tr>
+                                <tr ng-repeat="item in especialidades | filter: search">
+                                    <td>{{item.id_cat_especialidad_medica}}</td>
+                                    <td>{{item.especialidad_medica}}</td>
+                                    <td>{{item.total_polizas}}</td>
+                                    <td>{{item.n_polizas}}</td>
+                                    <td>{{item.porcentaje | number: 2 }}%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <form>
+                            <div class="col col-xs-12">
+                                <h5 style="color:red">Los 10 clientes con más pólizas de diferentes empresas aseguradoras</h5>
+                                <div class="row">
+                                    <div class="col col-xs-4">
+                                        <div class="form-group">
+                                            <label>Buscar</label>
+                                            <input type="text" class="form-control" ng-model="search2" placeholder="Buscar cliente">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="col col-sm-12">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Cliente</th>
+                                    <th scope="col">Cantidad de polizas</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-if="empresas.length == 0">
+                                    <td colspan="3" align="center">Sin registros</td>
+                                </tr>
+                                <tr ng-repeat="item in clientes | filter: search2">
+                                    <td>{{item.id_cliente_asegurado}}</td>
+                                    <td>{{item.nombre}} {{item.apellido_paterno}} {{item.apellido_materno}}</td>
+                                    <td>{{item.n_polizas}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/sb-admin-2.min.js"></script>
