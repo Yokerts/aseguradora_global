@@ -83,8 +83,8 @@ class TransaccionesCtrl extends Controller
                 ->get();
 
             for ($i=0;$i < $polizas->count(); $i++){
-                $polizas[$i]->tota_polizas = $total_polizas[0]->total_polizas;
-                $polizas[$i]->porcentaje = (100 / $polizas[$i]->tota_polizas) * $polizas[$i]->n_polizas;
+                $polizas[$i]->total_polizas = $total_polizas[0]->total_polizas;
+                $polizas[$i]->porcentaje = (100 / $polizas[$i]->total_polizas) * $polizas[$i]->n_polizas;
             }
 
             $count = $polizas->count();

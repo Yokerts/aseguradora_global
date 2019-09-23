@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59fa932-cba4-44af-8ec9-22558780756c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Sistema/Eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Sistema/Eventos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/transaccionesCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/js/controllers/transaccionesCtrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/eventos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/eventos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/polizas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/polizas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/transacciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend_web_aseguradora_global/views/transacciones.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="362">
+              <caret line="85" column="35" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
               </folding>
@@ -97,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="340">
               <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
@@ -168,9 +171,9 @@
         <option value="$PROJECT_DIR$/../Peticiones-HTTP.json" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/946c8915-a39b-4ef4-9c13-02dfebf10ca8/console.sql" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/Sistema/Eventos.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php" />
       </list>
     </option>
   </component>
@@ -392,12 +395,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568911714844</updated>
-      <workItem from="1568911718336" duration="80080000" />
+      <workItem from="1568911718336" duration="81141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80080000" />
+    <option name="totallyTimeSpent" value="81141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -405,10 +408,10 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22995462" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" weight="0.3715221" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49924356" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -710,16 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -730,10 +723,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/EventosCtrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="340">
           <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sistema/TransaccionesCtrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="85" column="35" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
           <folding>
             <element signature="e#48#76#0#PHP" expanded="true" />
           </folding>
