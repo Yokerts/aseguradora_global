@@ -93,6 +93,7 @@
 							<tr>
 								<th scope="col">Id</th>
 								<th scope="col">Fecha Alta</th>
+								<th scope="col">Id Poliza</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -107,6 +108,7 @@
 							<tr ng-repeat="item in eventos | filter: search">
 								<td>{{item.id_evento}}</td>
 								<td>{{item.fecha_alta}}</td>
+								<td>{{item.polizas_id_poliza}}</td>
 							</tr>
 						</tbody>
 					</table>

@@ -10,6 +10,6 @@ class Eventos extends Model
     protected $fillable = [
         "fecha_alta",
         "id_doctor_especialidad_medica",
-        "id_poliza"
+        "polizas_id_poliza"
     ];
 }

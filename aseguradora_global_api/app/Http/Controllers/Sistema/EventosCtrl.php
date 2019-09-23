@@ -64,7 +64,15 @@ class EventosCtrl extends Controller
 
         if ($success){
             DB::commit();
-            return response()->json(["data" => $tabla, 'success' => true, "mensaje" => "Guardado Correctamente"], 201);
+
+            $evento = new Eventos([
+                "fecha_alta" => $request->fecha_alta,
+                "id_doctor_especialidad_medica"=> $request->id_doctor_especialidad_medica,
+                "polizas_id_poliza"=> $request->id_poliza
+            ]);
+
+            $evento->save();
+            return response()->json(["data" => $evento, 'success' => true, "mensaje" => "Guardado Correctamente"], 201);
         } else{
             DB::rollback();
             return response()->json(['data' => [], "success" => false, "mensaje" => "Poliza no vigente"], 409);
